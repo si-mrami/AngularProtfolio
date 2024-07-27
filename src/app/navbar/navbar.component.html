@@ -1,0 +1,90 @@
+<nav
+  class="bg-[#074643] text-white px-4 py-2 flex items-center bottom-3 justify-between"
+>
+  <div class="flex items-center">
+    <img
+      src="../../assets/mramilogo.png"
+      alt="Logo"
+      class="h-8 mr-2 w-8 rounded-full"
+    />
+    <span class="text-lg font-bold">MRAMI</span>
+  </div>
+  <ul class="hidden md:flex space-x-4">
+    <li><a href="#" class="hover:underline">Home</a></li>
+    <li><a href="#" class="hover:underline">About</a></li>
+    <li><a href="#" class="hover:underline">Service</a></li>
+    <li><a href="#" class="hover:underline">Portfolio</a></li>
+    <li><a href="#" class="hover:underline">Blog</a></li>
+    <li><a href="#" class="hover:underline">Contact</a></li>
+  </ul>
+  <div class="hidden md:flex">
+    <a
+      href="#"
+      class="bg-white text-green-700 px-4 py-2 rounded-full border border-purple-500 hover:bg-gray-100"
+    >
+      <span class="flex items-center">
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          class="h-5 w-5 mr-2"
+          viewBox="0 0 20 20"
+          fill="currentColor"
+        >
+          <path
+            fill-rule="evenodd"
+            d="M4 2a2 2 0 00-2 2v12a2 2 0 002 2h12a2 2 0 002-2V4a2 2 0 00-2-2H4zm0 2h12v12H4V4zm4 3v2H6v2h2v2h2v-2h2v-2h-2V7H8z"
+            clip-rule="evenodd"
+          />
+        </svg>
+        DOWNLOAD CV
+      </span>
+    </a>
+  </div>
+  <button class="md:hidden" (click)="toggleMenu()">
+    <svg
+      xmlns="http://www.w3.org/2000/svg"
+      class="h-6 w-6"
+      fill="none"
+      viewBox="0 0 24 24"
+      stroke="currentColor"
+    >
+      <path
+        stroke-linecap="round"
+        stroke-linejoin="round"
+        stroke-width="2"
+        d="M4 6h16M4 12h16m-7 6h7"
+      />
+    </svg>
+  </button>
+</nav>
+
+<!-- Mobile Menu -->
+<div class="md:hidden" *ngIf="open">
+  <ul class="flex flex-col space-y-2">
+    <li><a href="#" class="block px-4 py-2 hover:underline">Home</a></li>
+    <li><a href="#" class="block px-4 py-2 hover:underline">About</a></li>
+    <li><a href="#" class="block px-4 py-2 hover:underline">Service</a></li>
+    <li><a href="#" class="block px-4 py-2 hover:underline">Portfolio</a></li>
+    <li><a href="#" class="block px-4 py-2 hover:underline">Blog</a></li>
+    <li><a href="#" class="block px-4 py-2 hover:underline">Contact</a></li>
+  </ul>
+  <a
+    href="#"
+    class="block bg-white text-green-700 px-4 py-2 rounded-full border border-purple-500 hover:bg-gray-100 mt-2"
+  >
+    <span class="flex items-center justify-center">
+      <svg
+        xmlns="http://www.w3.org/2000/svg"
+        class="h-5 w-5 mr-2"
+        viewBox="0 0 20 20"
+        fill="currentColor"
+      >
+        <path
+          fill-rule="evenodd"
+          d="M4 2a2 2 0 00-2 2v12a2 2 0 002 2h12a2 2 0 002-2V4a2 2 0 00-2-2H4zm0 2h12v12H4V4zm4 3v2H6v2h2v2h2v-2h2v-2h-2V7H8z"
+          clip-rule="evenodd"
+        />
+      </svg>
+      DOWNLOAD CV
+    </span>
+  </a>
+</div>
