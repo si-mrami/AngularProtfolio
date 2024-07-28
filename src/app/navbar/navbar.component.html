@@ -58,14 +58,26 @@
 </nav>
 
 <!-- Mobile Menu -->
-<div class="md:hidden" *ngIf="open">
+<div class="md:hidden p-3 bg-[#074643] text-white" *ngIf="open">
   <ul class="flex flex-col space-y-2">
-    <li><a href="#" class="block px-4 py-2 hover:underline">Home</a></li>
-    <li><a href="#" class="block px-4 py-2 hover:underline">About</a></li>
-    <li><a href="#" class="block px-4 py-2 hover:underline">Service</a></li>
-    <li><a href="#" class="block px-4 py-2 hover:underline">Portfolio</a></li>
-    <li><a href="#" class="block px-4 py-2 hover:underline">Blog</a></li>
-    <li><a href="#" class="block px-4 py-2 hover:underline">Contact</a></li>
+    <li (click)="toggleMenu()">
+      <a href="#" class="block px-4 py-2 hover:underline">Home</a>
+    </li>
+    <li (click)="toggleMenu()">
+      <a href="#" class="block px-4 py-2 hover:underline">About</a>
+    </li>
+    <li (click)="toggleMenu()">
+      <a href="#" class="block px-4 py-2 hover:underline">Service</a>
+    </li>
+    <li (click)="toggleMenu()">
+      <a href="#" class="block px-4 py-2 hover:underline">Portfolio</a>
+    </li>
+    <li (click)="toggleMenu()">
+      <a href="#" class="block px-4 py-2 hover:underline">Blog</a>
+    </li>
+    <li (click)="toggleMenu()">
+      <a href="#" class="block px-4 py-2 hover:underline">Contact</a>
+    </li>
   </ul>
   <a
     href="#"

@@ -1,0 +1,51 @@
+<div class="skills-container p-4">
+  <h1 class="text-2xl font-bold text-center mb-4">Skills</h1>
+  <div class="tabs flex justify-center mb-4">
+    <button
+      class="tab p-2 mx-2 rounded"
+      [class.bg-blue-900]="activeTab === 'frontend'"
+      [class.text-white]="activeTab === 'frontend'"
+      (click)="setActiveTab('frontend')"
+    >
+      Front-End
+    </button>
+    <button
+      class="tab p-2 mx-2 rounded"
+      [class.bg-blue-900]="activeTab === 'backend'"
+      [class.text-white]="activeTab === 'backend'"
+      (click)="setActiveTab('backend')"
+    >
+      Back-End
+    </button>
+    <button
+      class="tab p-2 mx-2 rounded"
+      [class.bg-blue-900]="activeTab === 'database'"
+      [class.text-white]="activeTab === 'database'"
+      (click)="setActiveTab('database')"
+    >
+      Database
+    </button>
+  </div>
+
+  <div class="skills flex flex-col items-center justify-center">
+    <div
+      *ngFor="let skill of getSkills()"
+      class="skill-item flex items-center mb-4 w-full"
+    >
+      <div class="w-full flex p-3 justify-between items-center">
+        <div>{{ skill.name }}</div>
+        <!-- skills image -->
+        <img class="w-4 h-4" [src]="skill.icon" [alt]="skill.name" />
+      </div>
+      <div class="skill-bar-container w-2/3 bg-gray-200 rounded relative">
+        <div
+          class="skill-bar bg-yellow-500 h-6 rounded"
+          [style.width.%]="skill.level"
+        ></div>
+        <div class="skill-level absolute inset-y-0 right-0 pr-2">
+          {{ skill.level }}%
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
