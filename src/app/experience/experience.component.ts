@@ -21,14 +21,14 @@ export class ExperienceComponent {
   myExp: Experience[] = [
     {
       title: 'Full Stack Developer',
-      company: 'Ferrelacer . Remote',
+      company: 'Freelancer . Remote',
       period: 'May 2024 - Present',
       description:
         'I m a Full Stack Developer freelancer, responsible for designing, developing, deploying, and troubleshooting complete web and mobile applications. I handle both frontend and backend tasks, manage databases, fix technical issues, and ensure seamless integration between client-side interfaces and server-side functionality, deploying projects to cloud platforms for a smooth user experience',
     },
     {
       title: 'Backend Developer',
-      company: 'Ferrelacer . Saudi Arabia · Remote',
+      company: 'Freelancer . Saudi Arabia · Remote',
       period: 'Feb 2024 - Apr 2024',
       description:
         "Using Node.js and Express.js, I've developed a robust API to power the backend of a dynamic website built with Angular for the front end. This project involved transforming a static website into a fully dynamic platform through seamless collaboration between the backend and front-end teams.",

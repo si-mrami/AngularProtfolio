@@ -1,31 +1,21 @@
-/* Custom animations */
-@keyframes fadeInUp {
-  from {
-    opacity: 0;
-    transform: translate3d(0, 40px, 0);
-  }
-
-  to {
-    opacity: 1;
-    transform: none;
-  }
+.color-change {
+  animation: colorChange 1s infinite; // Change color every 1 second
 }
 
-@keyframes fadeIn {
-  from {
-    opacity: 0;
+@keyframes colorChange {
+  0% {
+    color: #ff7e5f; // Starting color
   }
-
-  to {
-    opacity: 1;
+  25% {
+    color: #feb47b;
   }
-}
-
-/* Apply animations to swiper slides */
-.swiper-slide {
-  animation: fadeInUp 0.6s both;
-}
-
-.swiper-slide-active {
-  animation: fadeIn 0.6s both;
+  50% {
+    color: #86a8e7;
+  }
+  75% {
+    color: #d4fc79;
+  }
+  100% {
+    color: #ff7e5f; // Loop back to the starting color
+  }
 }
