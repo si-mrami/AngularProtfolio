@@ -1,5 +1,5 @@
-import { NgFor, NgIf } from '@angular/common';
-import { Component } from '@angular/core';
+import {NgFor, NgIf} from '@angular/common';
+import {Component} from '@angular/core';
 
 interface Experience {
   title: string;
@@ -20,38 +20,55 @@ export class ExperienceComponent {
 
   myExp: Experience[] = [
     {
-      title: 'Full Stack Developer',
-      company: 'Freelancer . Remote',
-      period: 'May 2024 - Present',
+      title: 'مطور Full Stack',
+      company: 'فريلانسر . عن بُعد',
+      period: 'مايو 2024 - الحاضر',
       description:
-        'I m a Full Stack Developer freelancer, responsible for designing, developing, deploying, and troubleshooting complete web and mobile applications. I handle both frontend and backend tasks, manage databases, fix technical issues, and ensure seamless integration between client-side interfaces and server-side functionality, deploying projects to cloud platforms for a smooth user experience',
+        'أنا مطور Full Stack فريلانسر، مسؤول عن تصميم وتطوير ونشر وحل المشكلات في التطبيقات الإلكترونية والموبايل بالكامل. أتعامل مع المهام المتعلقة بالواجهة الأمامية والخلفية، وأدير قواعد البيانات، وأحل المشاكل التقنية، وأضمن تكاملًا سلسًا بين الواجهات الأمامية والوظائف الخلفية، بالإضافة إلى نشر المشاريع على منصات السحابة لتجربة مستخدم سلسة.',
     },
     {
-      title: 'Backend Developer',
-      company: 'Freelancer . Saudi Arabia · Remote',
-      period: 'Feb 2024 - Apr 2024',
+      title: 'مطور إدارة حسابات TikTok',
+      company: 'مشروع مستقل . عن بُعد',
+      period: '2024',
       description:
-        "Using Node.js and Express.js, I've developed a robust API to power the backend of a dynamic website built with Angular for the front end. This project involved transforming a static website into a fully dynamic platform through seamless collaboration between the backend and front-end teams.",
+        'طورت نظامًا لإدارة حسابات TikTok متعددة، يتضمن تفاعلات آلية مثل الإعجابات، التعليقات، والمتابعات. استخدمت Node.js و Express.js و MongoDB لتنفيذ هذه الميزة، حيث يمكن للمستخدمين جدولة التفاعلات، وتحليل أداء الحسابات. يتضمن المشروع لوحة تحكم سهلة الاستخدام لإدارة الحسابات وجدولة الأنشطة، مما يتيح مراقبة الحسابات بشكل فعال. النظام يضمن تخزين بيانات تسجيل الدخول بأمان لإعادة الاتصال التلقائي.',
     },
     {
-      title: 'Frontend Developer',
-      company: 'E-AMBITION . Morocco · Remote',
-      period: 'Nov 2023 - Apr 2024 ',
-      description: `As a Front-End Developer on E-AMBITION, my responsibilities included:
-- Designing and implementing interactive user interfaces using Angular.
-- Developing reusable components for a robust frontend architecture.
-- Integrating frontend features with Java/Spring Boot backend services.
-- Managing application state and navigation using NgRx and Angular router.
-- Writing unit and integration tests to ensure code reliability.
-- Optimizing performance and ensuring accessibility and cross-browser compatibility.
-- Documenting code and development processes for effective collaboration.`,
+      title: 'مطور Backend',
+      company: 'فريلانسر . السعودية · عن بُعد',
+      period: 'فبراير 2024 - أبريل 2024',
+      description:
+        "باستخدام Node.js و Express.js، قمت بتطوير واجهة برمجة تطبيقات قوية لتشغيل خلفية موقع ويب ديناميكي تم بناءه باستخدام Angular للواجهة الأمامية. شمل هذا المشروع تحويل موقع ويب ثابت إلى منصة ديناميكية بالكامل من خلال التعاون السلس بين الفرق الخلفية والأمامية.",
     },
     {
-      title: 'MERN Stack Developer',
-      company: 'FI Leadder . France · Remote',
-      period: 'Apr 2022 - Jul 2022',
-      description:
-        'As a MERN Stack Developer Intern at FI Leadder, I had the opportunity to contribute to the development of a web application focused on automating the auditing process of accounting entries. Leveraging my skills in Node.js, React.js, and other relevant technologies, I collaborated with the team to bring this project to fruition. This experience further honed my abilities in web development and problem-solving while working in a remote environment.',
+      title: 'مطور Frontend',
+      company: 'E-AMBITION . المغرب · عن بُعد',
+      period: 'نوفمبر 2023 - أبريل 2024',
+      description: `كـ مطور Front-End في E-AMBITION، كانت مسؤولياتي تشمل:
+    - تصميم وتنفيذ واجهات مستخدم تفاعلية باستخدام Angular.
+    - تطوير مكونات قابلة لإعادة الاستخدام لهيكل واجهة أمامية قوية.
+    - دمج ميزات الواجهة الأمامية مع خدمات خلفية باستخدام Java/Spring Boot.
+    - إدارة حالة التطبيق والملاحة باستخدام NgRx و Angular router.
+    - كتابة اختبارات للوحدات والدمج لضمان موثوقية الكود.
+    - تحسين الأداء وضمان الوصولية والتوافق عبر المتصفحات.
+    - توثيق الكود وعمليات التطوير لتسهيل التعاون الفعال.`,
     },
+    {
+      title: 'مطور Node.js و Web Scraping',
+      company: 'Jumia Group . عن بُعد',
+      period: '2023',
+      description:
+        'طورت حلًا من الصفر لمقارنة أسعار المنتجات عالميًا باستخدام تقنيات الزحف على الويب وتحليل البيانات. عملت على كتابة حالات اختبار TDD باستخدام Jest و Mocha، وتطوير برنامج زاحف متعدد الخيوط باستخدام Node.js و Cheerio لجمع البيانات من مواقع التجارة الإلكترونية المختلفة. كما استخدمت Sequelize (أو TypeORM) مع MySQL لتخزين البيانات بشكل فعال، وقمت بتطوير واجهة مستخدم بسيطة باستخدام Electron.js لتمكين المستخدمين من التفاعل مع الزاحف.',
+    },
+    {
+      title: 'مطور MERN Stack',
+      company: 'FI Leadder . فرنسا · عن بُعد',
+      period: 'أبريل 2022 - يوليو 2022',
+      description:
+        'كـ متدرب في تطوير MERN Stack في FI Leadder، كان لي الفرصة للمساهمة في تطوير تطبيق ويب يركز على أتمتة عملية تدقيق القيود المحاسبية. باستخدام مهاراتي في Node.js و React.js وغيرها من التقنيات ذات الصلة، تعاونت مع الفريق لإتمام هذا المشروع. ساعدت هذه التجربة في تعزيز مهاراتي في تطوير الويب وحل المشكلات أثناء العمل في بيئة عن بُعد.',
+    },
+
   ];
+
+
 }
