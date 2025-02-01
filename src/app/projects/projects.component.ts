@@ -11,24 +11,24 @@ import { NgForOf } from '@angular/common';
 })
 export class ProjectsComponent implements OnInit {
   repositories: any[] = [
-    {
-      name: 'منصة التجارة الإلكترونية (شبيهة بنون وأمازون)',
-      avatar_url: '',
-      html_url: '',
-      technologies: [
-        'React.js',
-        'Node.js',
-        'Express.js',
-        'MongoDB',
-        'Socket.io',
-      ],
-      features: [
-        'نظام تسجيل التجار',
-        'إدارة وتتبع الطلبات',
-        'وظيفة الدردشة في الوقت الحقيقي',
-        'تكامل بوابة الدفع',
-      ],
-    },
+    // {
+    //   name: 'منصة التجارة الإلكترونية (شبيهة بنون وأمازون)',
+    //   avatar_url: '',
+    //   html_url: '',
+    //   technologies: [
+    //     'React.js',
+    //     'Node.js',
+    //     'Express.js',
+    //     'MongoDB',
+    //     'Socket.io',
+    //   ],
+    //   features: [
+    //     'نظام تسجيل التجار',
+    //     'إدارة وتتبع الطلبات',
+    //     'وظيفة الدردشة في الوقت الحقيقي',
+    //     'تكامل بوابة الدفع',
+    //   ],
+    // },
     // {
     //   name: 'منصة قانونية للمحامين',
     //   html_url:'',
