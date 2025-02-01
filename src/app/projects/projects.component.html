@@ -1,4 +1,3 @@
-
 <div class="experience-container p-4" lang="ar" dir="rtl">
   <h1 class="text-2xl font-bold text-center mb-6">المشاريع 🚀</h1>
   <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
@@ -18,8 +17,15 @@
       <div
         class="absolute inset-0 bg-[#074643] bg-opacity-70 flex flex-col items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity duration-300 p-4"
       >
-        <h3 class="text-white text-lg font-bold text-center">{{ repo.name }}</h3>
-        <p class="text-white text-sm text-center mt-2">{{ repo.description || 'لا توجد وصف متاح' }}</p>
+        <h3 class="text-white text-lg font-bold text-center">
+          {{ repo.name }}
+        </h3>
+        <p
+          class="text-white text-sm text-center mt-2"
+          *ngFor="let features of repo.features"
+        >
+          {{ features || "لا توجد وصف متاح" }}
+        </p>
         <a
           [href]="repo.html_url"
           target="_blank"
@@ -31,4 +37,3 @@
     </div>
   </div>
 </div>
-

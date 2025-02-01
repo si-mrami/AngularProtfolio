@@ -7,14 +7,14 @@ import { NgForOf } from '@angular/common';
   standalone: true,
   imports: [NgForOf],
   templateUrl: './projects.component.html',
-  styleUrls: ['./projects.component.scss'] // Corrected here
+  styleUrls: ['./projects.component.scss'], // Corrected here
 })
 export class ProjectsComponent implements OnInit {
   repositories: any[] = [
     {
       name: 'منصة التجارة الإلكترونية (شبيهة بنون وأمازون)',
       avatar_url: '',
-      html_url:'',
+      html_url: '',
       technologies: [
         'React.js',
         'Node.js',
@@ -29,22 +29,22 @@ export class ProjectsComponent implements OnInit {
         'تكامل بوابة الدفع',
       ],
     },
-    {
-      name: 'منصة قانونية للمحامين',
-      html_url:'',
-      avatar_url: '',
-      technologies: ['Flutter', 'Firebase', 'لوحة تحكم Angular'],
-      features: [
-        'بحث في القضايا النشطة',
-        'إدارة ملفات العملاء والتفاعلات',
-        'إجراء مكالمات صوتية وفيديو',
-        'الدردشة في الوقت الحقيقي وإرفاق الملفات',
-      ],
-    },
+    // {
+    //   name: 'منصة قانونية للمحامين',
+    //   html_url:'',
+    //   avatar_url: '',
+    //   technologies: ['Flutter', 'Firebase', 'لوحة تحكم Angular'],
+    //   features: [
+    //     'بحث في القضايا النشطة',
+    //     'إدارة ملفات العملاء والتفاعلات',
+    //     'إجراء مكالمات صوتية وفيديو',
+    //     'الدردشة في الوقت الحقيقي وإرفاق الملفات',
+    //   ],
+    // },
     {
       name: 'موقع لبيع الهواتف واجهزة البلايتيشن',
       avatar_url: 'assets/images/phon.png',
-      html_url:'',
+      html_url: '',
       technologies: ['React Native', 'Firebase', 'Node.js'],
       features: [
         'نظام إدراج الهواتف',
@@ -55,8 +55,8 @@ export class ProjectsComponent implements OnInit {
     },
     {
       name: 'منصة السياحة التطوعية (شبيهة بـ Workaway)',
-      avatar_url: '',
-      html_url:'',
+      avatar_url: 'assets/images/vulounter.png',
+      html_url: '',
       technologies: ['Angular', 'Node.js', 'Express.js', 'MongoDB'],
       features: [
         'البحث عن فرص تطوعية',
@@ -68,7 +68,7 @@ export class ProjectsComponent implements OnInit {
     {
       name: 'منصة تعليمية عبر الإنترنت',
       avatar_url: 'assets/images/eductaion.png',
-      html_url:'',
+      html_url: '',
       technologies: ['Angular', 'Firebase', 'WebRTC'],
       features: [
         'نظام إدارة الدروس',
@@ -80,7 +80,7 @@ export class ProjectsComponent implements OnInit {
     {
       name: 'إدارة حسابات TikTok',
       avatar_url: 'assets/images/tik.png',
-      html_url:'',
+      html_url: '',
       technologies: ['Node.js', 'Express.js', 'Serverless', 'MongoDB'],
       features: [
         'إدارة حسابات TikTok متعددة في نفس الوقت',
@@ -95,7 +95,5 @@ export class ProjectsComponent implements OnInit {
 
   constructor(private githubService: GithubService) {}
 
-  ngOnInit() {
-
-  }
+  ngOnInit() {}
 }
